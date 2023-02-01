@@ -1,0 +1,16 @@
+body {
+  background-color: powderblue;
+}
+
+h1 {
+  color: darkblue;
+}
+
+p {
+  color: crimson;
+}
+
+.testClass {
+  color: darkcyan;
+  background-color: black;
+}
