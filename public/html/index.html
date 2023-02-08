@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../build/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1 class="testClass">I am some text in a h1-tag!</h1>
+   
+
+    <h1>I am some text in a h1-tag!</h1>
     <p>I am some text in a p-tag!</p>
-    <p>Hello!</p>
+    <input type="text" placeholder="Type name..." id="myInput">
+    <button type="button" onclick="getName();">Get name</button>
+
+    <div id="greeter"></div>
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+
+
+    <div class="box">
+      <div class="innerBox"></div></div>
+      <script type="text/javascript">
+        const getName = () => {
+        const name = document.getElementById('myInput').value;
+        const nameToGreet = document.getElementById('greeter');
+        return nameToGreet.innerText = `Hello, ${name}!`;
+        }
+      </script>
   </body>
 </html>

@@ -10,8 +10,7 @@ const PORT = 4000;
 // app.get is a request to the server that gives a response
 // in this case, as long as the client is on "localhost:4000/",
 // they get greeted with the index.html-file
-app.use(express_1.default.static('/public'));
-console.log(__dirname + '/css');
+app.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
 app.get('/', function (req, res) {
     res.sendFile(path_1.default.join(__dirname, '../public/html/index.html'));
 });

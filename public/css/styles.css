@@ -1,5 +1,6 @@
 body {
-  background-color: powderblue;
+  background-color: #dfdfdc;
+  color: #045604;
 }
 
 h1 {
@@ -10,7 +11,40 @@ p {
   color: crimson;
 }
 
-.testClass {
-  color: darkcyan;
-  background-color: black;
+div {
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.box {
+    display: flex;
+    background-color: #045604;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #045604;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 25%;
+  }
+
+.innerBox {
+  display: flex;
+    background-color: #97dc0c;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #045604;
+    padding: 45px;
+    margin: 20px;
+    border-radius: 25%;
+}
+
+
+.greeter {
+  color: #045604;
+}
+
+
+
+
